@@ -476,7 +476,7 @@ public class ListaLibros extends javax.swing.JInternalFrame {
     
       private void insertarLibrosDesdeLista() {
         try {
-            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/bdd_bibilioteca", "root", "dilanlara2016");
+            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/bdd_biblioteca", "root", "dilanlara2016");
             for (Libros libro : listaLibros) {
                CallableStatement stmt = conn.prepareCall("{CALL InsertarLibro(?, ?, ?, ?, ?, ?, ?, ?, ?, ?)}");
                 stmt.setString(1, libro.getTitulo());
