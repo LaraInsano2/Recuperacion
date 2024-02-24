@@ -78,7 +78,12 @@ public class PantallaPrincipal extends javax.swing.JFrame {
         jMenu1.add(VerProyectos);
         jMenu1.add(jSeparator1);
 
-        jMenuItem2.setText("Eliminar Libro");
+        jMenuItem2.setText("VerLista de Libros");
+        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem2ActionPerformed(evt);
+            }
+        });
         jMenu1.add(jMenuItem2);
 
         jMenuBar1.add(jMenu1);
@@ -108,6 +113,13 @@ public class PantallaPrincipal extends javax.swing.JFrame {
         ag.show();
       
     }//GEN-LAST:event_VerProyectosActionPerformed
+
+    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+        // TODO add your handling code here:
+        VerLibros vl=new VerLibros();
+        Inicio.add(vl);
+        vl.show();
+    }//GEN-LAST:event_jMenuItem2ActionPerformed
 
    
 
