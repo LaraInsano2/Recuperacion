@@ -6,21 +6,26 @@ package Modelo;
 
 /**
  *
- * @author Dilan Lara
+ * @author Belial
  */
-public class Libro { 
-    String titulo;
-    String autor;
-    String ISBN;
-    int paginas;
-    int edicion;
-    String editorial;
-    String ciudad;
-    String pais;
-    String fechaEdicion;
-public Libro(){}
+public class Libros {
+   private String titulo;
+   private Persona autor;
+   private String ISBN;
+   private int paginas;
+   private int edicion;
+   private String editorial;
+   private String ciudad;
+   private String pais;
+   private String fechaEdicion;
 
-    public Libro(String titulo, String autor, String ISBN, int paginas, int edicion, String editorial, String ciudad, String pais, String fechaEdicion) {
+    public Libros() {
+    }
+
+   
+   
+   
+    public Libros(String titulo, Persona autor, String ISBN, int paginas, int edicion, String editorial, String ciudad, String pais, String fechaEdicion) {
         this.titulo = titulo;
         this.autor = autor;
         this.ISBN = ISBN;
@@ -40,11 +45,11 @@ public Libro(){}
         this.titulo = titulo;
     }
 
-    public String getAutor() {
+    public Persona getAutor() {
         return autor;
     }
 
-    public void setAutor(String autor) {
+    public void setAutor(Persona autor) {
         this.autor = autor;
     }
 
@@ -103,7 +108,11 @@ public Libro(){}
     public void setFechaEdicion(String fechaEdicion) {
         this.fechaEdicion = fechaEdicion;
     }
-    
-    
+   
+   
+   
+   
+   
+   
+   
 }
-

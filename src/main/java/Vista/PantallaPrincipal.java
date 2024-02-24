@@ -103,7 +103,7 @@ public class PantallaPrincipal extends javax.swing.JFrame {
 
     private void VerProyectosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VerProyectosActionPerformed
         // TODO add your handling code here:
-        AgregarLibro ag =new AgregarLibro();
+        ListaLibros ag =new ListaLibros();
         Inicio.add(ag);
         ag.show();
       

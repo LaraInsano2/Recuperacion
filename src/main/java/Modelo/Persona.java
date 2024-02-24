@@ -4,52 +4,42 @@
  */
 package Modelo;
 
+import java.time.LocalDate;
+import javax.swing.JComboBox;
+
 /**
  *
- * @author Dilan Lara
+ * @author Belial
  */
 public class Persona {
-   private int id_Persona;
-    private String autorNombre;
-   private String autorAppelido;
-   
-   public Persona(){}
+    private String nombres;
+    private String apellidos;
+  
 
-    public Persona(int id_Persona, String autorNombre, String autorAppelido) {
-        this.id_Persona = id_Persona;
-        this.autorNombre = autorNombre;
-        this.autorAppelido = autorAppelido;
+    public Persona() {
     }
 
-    public int getId_Persona() {
-        return id_Persona;
+    public Persona(String nombres, String apellidos) {
+        this.nombres = nombres;
+        this.apellidos = apellidos;
     }
 
-    public void setId_Persona(int id_Persona) {
-        this.id_Persona = id_Persona;
+    public String getNombres() {
+        return nombres;
     }
 
-    public String getAutorNombre() {
-        return autorNombre;
+    public void setNombres(String nombres) {
+        this.nombres = nombres;
     }
 
-    public void setAutorNombre(String autorNombre) {
-        this.autorNombre = autorNombre;
+    public String getApellidos() {
+        return apellidos;
     }
 
-    public String getAutorAppelido() {
-        return autorAppelido;
+    public void setApellidos(String apellidos) {
+        this.apellidos = apellidos;
     }
-
-    public void setAutorAppelido(String autorAppelido) {
-        this.autorAppelido = autorAppelido;
-    }
-
-   
-
-
-   
-   
     
+
     
 }
